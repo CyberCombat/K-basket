@@ -12,13 +12,11 @@ export default function reducer(state = initState, action) {
         ...state,
         authenticate: true,
       };
-
     case LOGOUT:
       return {
         ...state,
         authenticate: false,
       };
-
     default:
       return state;
       break;
